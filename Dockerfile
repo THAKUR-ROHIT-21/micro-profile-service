@@ -8,10 +8,8 @@ RUN npm ci --omit=dev
 
 COPY src ./src
 
-RUN chown -R node:node /app
+EXPOSE 8000
 
 USER node
-
-EXPOSE 8000
 
 CMD ["npm", "start"]
