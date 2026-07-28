@@ -8,7 +8,11 @@ RUN npm ci --omit=dev
 
 COPY src ./src
 
-EXPOSE 8000
+ENV NODE_ENV=production
+ENV PORT=8001
+
+
+EXPOSE 8001
 
 USER node
 

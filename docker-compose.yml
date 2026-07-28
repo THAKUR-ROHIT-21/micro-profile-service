@@ -3,7 +3,7 @@ services:
     image: biharibabu1/profile-service:1.0
     container_name: profile-service
     ports:
-      - "8000:8000"
+      - "8001:8001"
     environment:
       DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@profile_db:5432/profile_db
       JWT_SECRET: ${JWT_SECRET}
